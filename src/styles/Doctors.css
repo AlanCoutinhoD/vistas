@@ -1,0 +1,98 @@
+.doctors-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.doctors-container {
+    padding: 20px;
+    max-width: 1200px; /* Limita el ancho máximo de la tabla */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.doctors-container h1 {
+    color: #2b7b2f;
+    margin-bottom: 10px;
+}
+
+.doctors-container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.new-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6fae61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado si es un enlace */
+}
+
+.new-button:hover {
+    background-color: #5a9b4d;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #6fae61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #5a9b4d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px; /* Espacio debajo de la tabla */
+}
+
+table th, table td {
+    padding: 12px; /* Aumenta el padding para mejor visualización */
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+}
+
+table th {
+    background-color: #c5ecbf;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alterna colores de fila para mejor legibilidad */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Resalta la fila al pasar el ratón */
+}
+
+table .actions img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px; /* Espacio entre los iconos */
+}

@@ -1,0 +1,165 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #B5E0A2;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #B5E0A2;
+}
+
+.navbar .logo {
+    font-weight: bold;
+}
+
+.navbar nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.mode-switch {
+    background-color: #3AB02A;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+/* Main Styles */
+main {
+    padding: 2em;
+    margin-top: 10%;
+}
+
+/* Heading Styles */
+h1 {
+    color: #35A94A;
+}
+
+/* Controls Styles */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+/* Button Styles */
+.new-button {
+    background-color: #3AB02A;
+    color: white;
+    border: none;
+    padding: 1em em;
+    cursor: pointer;
+    margin-left: -25%;
+    margin-right: 53%;
+    margin-bottom: 9%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el input y el botón */
+}
+
+.search-bar input {
+    padding: 1em;
+    border: 1px solid #ccc;
+    /*border-right: none;*/
+    flex: 1;
+    border-radius:5px 0 0 5px; /* Redondear las esquinas del input */
+}
+
+.search-button {
+    background-color: #3AB02A;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Redondear las esquinas del botón */
+    margin-bottom: 2%;
+}
+
+/* Inventory Styles */
+.inventory {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en el grid */
+    gap: 1em;
+    
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    position: relative;
+    border-radius: 8px; /* Añade bordes redondeados a las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    margin-right: 3em; /* Asegura espacio para el botón de menú */
+}
+
+.card h2 {
+    margin: 0;
+    color: #35A94A;
+}
+
+.card-menu-button {
+    background: none;
+    border: none;
+    color: #35A94A;
+    font-size: 1.5em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    margin-top: -10%;
+    margin-right: -10%;
+}
+
+.card-menu {
+    display: none;
+    position: absolute;
+    top: 3em; /* Ajusta la distancia desde el botón de menú */
+    right: 1em;
+    background: rgb(0, 0, 0);
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Añade bordes redondeados al menú */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-menu button {
+    background: none;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.card-menu button:hover {
+    background-color: #474242;
+}
+
+/* Mostrar el menú al hacer hover sobre el botón */
+.card-menu-button:hover + .card-menu,
+.card-menu:hover {
+    display: block;
+}

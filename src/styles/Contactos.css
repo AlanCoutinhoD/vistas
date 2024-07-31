@@ -1,0 +1,128 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #d3e8d1;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left, header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .right {
+    gap: 15px;
+}
+
+header .right a {
+    text-decoration: none;
+    color: #2b7b2f;
+    font-size: 1em;
+}
+
+header .right button {
+    padding: 8px 12px;
+    background-color: #6fae61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-left: 10px; /* Espacio entre los enlaces y el botón */
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+}
+
+/* Title Styles */
+.container h1 {
+    color: #2b7b2f;
+    text-align: center;
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.container p {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente los botones */
+    margin-bottom: 20px;
+}
+
+/* New Button Styles */
+.new-button {
+    padding: 10px 20px;
+    background-color: #6fae61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el input y el botón */
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em; /* Tamaño del texto en el input */
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #6fae61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 1em; /* Tamaño del texto en el botón de búsqueda */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f1f1f1;
+}
+
+.actions img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}

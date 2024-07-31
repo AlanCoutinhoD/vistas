@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Color de fondo para la página */
+}
+
+header {
+    background-color: #d3e8d1; /* Mismo color de fondo que en la página de doctores */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #2b7b2f; /* Mismo color para el título */
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #2b7b2f; /* Mismo color de texto que en la página de doctores */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .mode-toggle {
+    background-color: #6fae61; /* Botón con el mismo color que en la página de doctores */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #2b7b2f; /* Mismo color que en la página de doctores */
+}
+
+main h3 {
+    color: #555;
+    margin-bottom: 20px; /* Espacio debajo del subtítulo */
+}
+
+main .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+main .actions .new,
+main .actions .report {
+    background-color: #6fae61; /* Mismo color de fondo para los botones */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+main .actions .search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+main .actions .search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px; /* Ajusta el ancho del campo de búsqueda */
+}
+
+main .actions .search button {
+    background-color: #6fae61; /* Mismo color de fondo para el botón de búsqueda */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white; /* Color de fondo de la tabla */
+}
+
+table th,
+table td {
+    border: 1px solid #ddd; /* Color del borde de las celdas */
+    padding: 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f1f1f1; /* Mismo color de fondo para los encabezados */
+    color: #2b7b2f; /* Mismo color de texto para los encabezados */
+}
+
+table td img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
