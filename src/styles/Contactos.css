@@ -13,6 +13,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que el header esté encima de otros elementos */
 }
 
 header .left, header .right {
@@ -44,6 +49,7 @@ header .right button {
 /* Container Styles */
 .container {
     padding: 20px;
+    margin-top: 80px; /* Espacio para el header fijo */
 }
 
 /* Title Styles */
@@ -68,6 +74,7 @@ header .right button {
 
 /* New Button Styles */
 .new-button {
+    margin-bottom: 6%;
     padding: 10px 20px;
     background-color: #6fae61;
     color: white;

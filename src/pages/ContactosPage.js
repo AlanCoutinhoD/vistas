@@ -5,17 +5,18 @@ import deleteIcon from '../assets/delete.png';
 import editIcon from '../assets/edit.png';
 
 
-
 const MedicosPage = () => (
     <>
         <Header />
         <div className="container">
-            <h1>MEDICOS</h1>
-            <p>LISTA DE MEDICOS</p>
-            <button className="new-button">NUEVO</button>
-            <div className="search-bar">
-                <input type="text" placeholder="Escribe para buscar..." />
-                <button>Buscar</button>
+            <h1>CONTACTOS</h1>
+            <p>LISTA DE CONTACTOS</p>
+            <div className="button-container">
+                <button className="new-button">NUEVO</button>
+                <div className="search-bar">
+                    <input type="text" placeholder="Escribe para buscar..." />
+                    <button className='new-button'>Buscar</button>
+                </div>
             </div>
             <table>
                 <thead>
