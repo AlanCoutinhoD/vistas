@@ -4,9 +4,9 @@ import '../styles/Modo.css'; // Asegúrate de que la ruta sea correcta
 const ModeSelectionPage = () => {
   return (
     <div>
-      <header>
+      
         <button className="logout-button">CERRAR SESIÓN</button>
-      </header>
+   
       <main>
         <h1>SELECCIONE EL MODO</h1>
         <div className="mode-selection">

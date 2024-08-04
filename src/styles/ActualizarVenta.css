@@ -1,0 +1,74 @@
+/* Container Styles */
+.container {
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Form Container Styles */
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Form Section Styles */
+  .form-section {
+    flex: 1;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Data Section Styles */
+  .data-section {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Data Field Styles */
+  .data-field {
+    margin-bottom: 10px;
+  }
+  
+  .data-field strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  

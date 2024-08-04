@@ -39,16 +39,19 @@ header .mode-toggle {
 }
 
 main {
+    
     padding: 20px;
     text-align: center;
 }
 
 main h2 {
+    margin-bottom: 5%;
     color: #2b7b2f; /* Mismo color que en la página de doctores */
 }
 
 main h3 {
     color: #555;
+    margin-bottom: 45%;
     margin-bottom: 20px; /* Espacio debajo del subtítulo */
 }
 
@@ -93,6 +96,7 @@ main .actions .search button {
 }
 
 table {
+   
     width: 100%;
     border-collapse: collapse;
     background-color: white; /* Color de fondo de la tabla */

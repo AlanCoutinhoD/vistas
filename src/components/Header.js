@@ -1,17 +1,28 @@
-import React from 'react'; // Esta línea debe estar solo una vez
-import { Link } from 'react-router-dom';
-import '../styles/Header.css';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../styles/Header.css'; // Asegúrate de crear este archivo CSS
 
 const Header = () => {
+  const navigate = useNavigate(); // Hook para redirigir
+
+  const handleLogout = () => {
+    // Aquí puedes manejar el cierre de sesión
+    // Por ejemplo, eliminar el token de autenticación
+    // y redirigir al usuario a la página de inicio de sesión
+    navigate('/login');
+  };
+
   return (
-    <header>
-      <div className="left">
+    <header className="header">
+      <div className="header-title">
         <h1>FARMACIA AMIGO</h1>
       </div>
-      <nav className="right">
-        <Link to="/">LOGIN</Link>
-        <Link to="/doctors">MEDICOS</Link>
-        <button>CAMBIAR MODO</button>
+      <nav className="header-nav">
+        <a href="/ventas">VENTAS</a>
+        <a href="/InventarioM">INVENTARIO</a>
+        <a href="/distribuidores">DISTRIBUIDORES</a>
+        <a href="/modo">CAMBIAR DE MODO</a>
+        <button className="logout-button" onClick={handleLogout}>Cerrar Sesión</button>
       </nav>
     </header>
   );

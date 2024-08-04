@@ -27,6 +27,8 @@ header {
 
 /* Logout Button Styles */
 .logout-button {
+    margin-top: 25%;
+    margin-left: 100%;
     background-color: #3AB02A;
     color: #ffffff;
     border: none;

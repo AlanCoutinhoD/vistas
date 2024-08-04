@@ -1,0 +1,129 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9; /* Color de fondo suave */
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Máximo ancho para el contenedor */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header button {
+    background-color: #2CA01C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Tamaño de fuente consistente */
+}
+
+.header button:hover {
+    background-color: #45a049;
+}
+
+.header h1 {
+    color: #2CA01C;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em; /* Tamaño de fuente para el título */
+}
+
+/* Form Container Styles */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Form Group Styles */
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.form-group button {
+    width: 100%;
+    background-color: #2CA01C;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Tamaño de fuente consistente */
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+/* Patient Data Container Styles */
+.patient-data-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patient-data {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.patient-data table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.patient-data th,
+.patient-data td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.patient-data th {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,160 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #B5E0A2;
+    padding: 1em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-weight: bold;
+}
+
+.navbar nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.mode-switch {
+    background-color: #3AB02A;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-left: 170%;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 60%;
+    padding: 2em;
+}
+
+h1 {
+    color: #35A94A;
+    text-align: center;
+}
+
+/* Controls Styles */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.new-button {
+    background-color: #3AB02A;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-right: none;
+    flex: 1;
+}
+
+.search-button {
+    background-color: #3AB02A;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+/* Content Styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.patient-list {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.patient-list h2 {
+    color: #35A94A;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em;
+}
+
+tbody td {
+    padding: 0.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.view-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 1;
+}
+
+.patient-info, .appointment-info {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.patient-info h2, .appointment-info h2 {
+    color: #35A94A;
+}
+
+.edit-button, .documents-button {
+    background-color: #3AB02A;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
