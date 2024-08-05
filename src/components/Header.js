@@ -18,7 +18,7 @@ const Header = () => {
       <nav className="header-nav">
         <a href="/ventas">VENTAS</a>
         <a href="/InventarioM">INVENTARIO</a>
-        <a href="/distribuidores">DISTRIBUIDORES</a>
+        {/* <a href="/distribuidores">DISTRIBUIDORES</a> */}
         <a href="/modo">CAMBIAR DE MODO</a>
         <button className="logout-button" onClick={handleLogout}>Cerrar Sesión</button>
       </nav>
