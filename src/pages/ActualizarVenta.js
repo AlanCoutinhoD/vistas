@@ -5,22 +5,22 @@ import { useParams, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'; // Importa SweetAlert2
 
 const ActualizarVentaPage = () => {
-  const { id } = useParams(); // Obtener el ID de la venta desde la URL
+  const { id } = useParams(); 
   const [venta, setVenta] = useState({});
   const [originalVenta, setOriginalVenta] = useState({});
-  const navigate = useNavigate(); // Hook para redirigir
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const fetchVenta = async () => {
       try {
         const response = await axios.get(`http://localhost:3000/sales/sales/${id}`);
         const ventaData = response.data;
-        console.log('Datos de la venta:', ventaData); // Verifica los datos en la consola
+        console.log('Datos de la venta:', ventaData); 
         setVenta(ventaData);
-        setOriginalVenta(ventaData); // Guarda los datos originales
+        setOriginalVenta(ventaData); 
       } catch (error) {
         console.error('Error fetching venta:', error);
-        navigate('/ventas'); // Redirige si hay un error
+        navigate('/ventas'); 
       }
     };
 
@@ -61,7 +61,7 @@ const ActualizarVentaPage = () => {
 
         await axios.put(`http://localhost:3000/sales/sales/${id}`, updatedVenta);
         await Swal.fire('Actualizado!', 'La venta se ha actualizado correctamente.', 'success');
-        navigate('/ventas'); // Redirige al usuario a la página de ventas después de actualizar
+        navigate('/ventas'); 
       } catch (error) {
         console.error('Error updating venta:', error);
         await Swal.fire('Error', 'Hubo un problema al actualizar la venta.', 'error');

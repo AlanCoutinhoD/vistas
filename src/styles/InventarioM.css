@@ -5,15 +5,6 @@ body {
     padding: 0;
 }
 
-/* Header Styles */
-header {
-    background-color: #B5E0A2;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* Navbar Styles */
 .navbar {
     display: flex;
@@ -44,20 +35,22 @@ header {
 /* Main Styles */
 main {
     padding: 2em;
-    margin-top: 10%;
+    margin-top: 60px; /* Ajusta según el tamaño del header */
 }
 
 /* Heading Styles */
 h1 {
     color: #35A94A;
+    margin-bottom: 1em; /* Espacio debajo del título */
+    text-align: center; /* Centra el título */
 }
 
 /* Controls Styles */
 .controls {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
     align-items: center; /* Alinea verticalmente los elementos */
+    gap: 1em; /* Espacio entre los elementos */
+    margin-bottom: 2em;
 }
 
 /* Button Styles */
@@ -65,42 +58,41 @@ h1 {
     background-color: #3AB02A;
     color: white;
     border: none;
-    padding: 1em em;
+    padding: 0.8em 1.5em; /* Ajusta el tamaño del botón */
     cursor: pointer;
-    margin-left: -25%;
-    margin-right: 53%;
-    margin-bottom: 9%;
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita para mayor visibilidad */
 }
 
+/* Form Styles */
 .search-bar {
-    display: flex;
-    align-items: center; /* Alinea verticalmente el input y el botón */
+    
+    flex-direction: row; /* Usa flexbox para alinear elementos horizontalmente */
+    gap: 0; /* Elimina el espacio entre el input y el botón */
+    width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo del formulario */
 }
-
 .search-bar input {
-    padding: 1em;
+    padding: 0.8em;
     border: 1px solid #ccc;
-    /*border-right: none;*/
-    flex: 1;
-    border-radius:5px 0 0 5px; /* Redondear las esquinas del input */
+    border-radius: 5px 0 0 5px; /* Bordes redondeados del input */
+    flex: 1; /* Ocupa el espacio restante dentro del formulario */
 }
-
 .search-button {
     background-color: #3AB02A;
     color: white;
     border: none;
-    padding: 1em;
+    padding: 0.8em 1.5em; /* Ajusta el tamaño del botón */
     cursor: pointer;
-    border-radius: 0 5px 5px 0; /* Redondear las esquinas del botón */
-    margin-bottom: 2%;
+    border-radius: 0 5px 5px 0; /* Bordes redondeados del botón */
+    font-weight: bold; /* Negrita para mayor visibilidad */
+    margin-left: -1px; /* Elimina el borde entre el input y el botón */
 }
-
 /* Inventory Styles */
 .inventory {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columnas en el grid */
     gap: 1em;
-    
 }
 
 .card {
@@ -130,8 +122,6 @@ h1 {
     top: 1em;
     right: 1em;
     cursor: pointer;
-    margin-top: -10%;
-    margin-right: -10%;
 }
 
 .card-menu {

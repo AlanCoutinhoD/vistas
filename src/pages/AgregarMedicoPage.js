@@ -7,7 +7,7 @@ const AgregarMedico = () => {
   const navigate = useNavigate(); // Hook para la navegación
 
   const handleRedirect = () => {
-    navigate('/medicos'); // Redirige a la ruta deseada
+    navigate('/medicos'); 
   };
 
   const [nombre, setNombre] = useState('');
@@ -44,10 +44,10 @@ const AgregarMedico = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      // Mostrar notificación de éxito
+    
       toast.success('Médico agregado exitosamente');
 
-      // Limpiar campos después del envío
+      
       setNombre('');
       setApellido('');
       setEspecialidad('');
@@ -57,7 +57,7 @@ const AgregarMedico = () => {
       setDisponibilidad('');
       setNotas('');
     } catch (error) {
-      // Mostrar notificación de error
+      
       toast.error(`Failed to fetch: ${error.message}`);
     }
   };
@@ -132,7 +132,7 @@ const AgregarMedico = () => {
           />
           <button type="submit">AGREGAR</button>
         </form>
-        <ToastContainer /> {/* Coloca el contenedor de Toastify aquí */}
+        <ToastContainer /> {}
       </div>
     </div>
   );

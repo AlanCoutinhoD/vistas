@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // Usaremos axios para la solicitud HTTP
+import axios from 'axios'; 
 import * as XLSX from 'xlsx'; // Importamos la biblioteca xlsx
-import { saveAs } from 'file-saver'; // Importamos file-saver para guardar el archivo
-import Swal from 'sweetalert2'; // Importamos SweetAlert2
-import { useNavigate } from 'react-router-dom'; // Importamos useNavigate para la redirección
-import '../styles/Ventas.css'; // Asegúrate de que la ruta sea correcta
+import { saveAs } from 'file-saver'; 
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom'; 
+import '../styles/Ventas.css'; 
 import Header from '../components/Header';
 import editImg from '../assets/edit.png';
 import deleteImg from '../assets/delete.png';
@@ -27,7 +27,7 @@ const VentasPage = () => {
   }, []);
 
   const handleDelete = async (id) => {
-    // Mostrar alerta de confirmación
+   
     const result = await Swal.fire({
       title: '¿Estás seguro?',
       text: "¡Esta acción no se puede deshacer!",
@@ -41,11 +41,11 @@ const VentasPage = () => {
 
     if (result.isConfirmed) {
       try {
-        // Realizar solicitud DELETE
+       
         await axios.delete(`http://localhost:3000/sales/sales/${id}`);
-        // Actualizar la lista de ventas después de eliminar
+        
         setVentas((prevVentas) => prevVentas.filter((venta) => venta.id !== id));
-        // Mostrar notificación de éxito
+       
         Swal.fire({
           title: 'Eliminado',
           text: 'La venta ha sido eliminada exitosamente.',
@@ -54,7 +54,7 @@ const VentasPage = () => {
         });
       } catch (error) {
         console.error('Error deleting venta:', error);
-        // Mostrar notificación de error
+        
         Swal.fire({
           title: 'Error',
           text: 'Hubo un problema al eliminar la venta.',
@@ -66,12 +66,12 @@ const VentasPage = () => {
   };
 
   const handleEdit = (id) => {
-    // Redirigir a la página de edición de venta
+   
     navigate(`/ActualizarVenta/${id}`);
   };
 
   const handleGenerateReport = () => {
-    // Crear una hoja de trabajo (worksheet) a partir de los datos
+   
     const ws = XLSX.utils.json_to_sheet(ventas, {
       header: ['ID', 'Fecha', 'Medicamentos Vendidos', 'Total'],
     });
@@ -89,7 +89,7 @@ const VentasPage = () => {
   };
 
   const handleNewSale = () => {
-    navigate('/nueva-venta'); // Redirige a la página de nueva venta
+    navigate('/AgregarVenta'); 
   };
 
   return (

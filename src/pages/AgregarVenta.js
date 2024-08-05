@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify'; // Importa Toastify
 import { useNavigate } from 'react-router-dom';
-import '../styles/AgregarVenta.css'; // Asegúrate de que el CSS esté en la ruta correcta
+import '../styles/AgregarVenta.css'; 
 
 const AgregarVenta = () => {
   const navigate = useNavigate(); // Hook para la navegación
 
   const handleRedirect = () => {
-    navigate('/ventas'); // Redirige a la ruta deseada
+    navigate('/ventas'); 
   };
 
   const [fecha, setFecha] = useState('');
@@ -34,15 +34,14 @@ const AgregarVenta = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      // Mostrar notificación de éxito
+     
       toast.success('Venta agregada exitosamente');
 
-      // Limpiar campos después del envío
       setFecha('');
       setMedicamentosVendidos('');
       setTotal('');
     } catch (error) {
-      // Mostrar notificación de error
+     
       toast.error(`Failed to fetch: ${error.message}`);
     }
   };
@@ -78,7 +77,7 @@ const AgregarVenta = () => {
           />
           <button type="submit">AGREGAR</button>
         </form>
-        <ToastContainer /> {/* Coloca el contenedor de Toastify aquí */}
+        <ToastContainer /> {}
       </div>
     </div>
   );

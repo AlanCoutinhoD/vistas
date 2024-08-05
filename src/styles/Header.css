@@ -17,10 +17,11 @@
   .header-nav {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 100px;
   }
   
   .header-nav a {
+    margin-left: -10%;
     text-decoration: none;
     color: #2CA01C; /* Color de los enlaces */
     font-size: 1.1em; /* Tamaño del texto de los enlaces */

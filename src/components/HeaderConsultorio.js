@@ -3,10 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/Header.css'; 
 
 const Header = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate(); // Hook para redirigir
 
   const handleLogout = () => {
-    
+   
     navigate('/');
   };
 
@@ -16,9 +16,9 @@ const Header = () => {
         <h1>FARMACIA AMIGO</h1>
       </div>
       <nav className="header-nav">
-        <a href="/ventas">VENTAS</a>
-        <a href="/InventarioM">INVENTARIO</a>
-        <a href="/distribuidores">DISTRIBUIDORES</a>
+        <a href="/Contactos">MEDICOS</a>
+        <a href="/Pacientes">PACIENTES</a>
+        <a href="/Citas">CITAS</a>
         <a href="/modo">CAMBIAR DE MODO</a>
         <button className="logout-button" onClick={handleLogout}>Cerrar Sesión</button>
       </nav>

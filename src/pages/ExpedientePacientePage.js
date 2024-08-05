@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ExpedientePaciente.css'; // Asegúrate de que el nombre del archivo CSS coincida
+import '../styles/ExpedientePaciente.css';
 
 const ExpedientePacientePage = () => {
     return (
@@ -45,7 +45,7 @@ const ExpedientePacientePage = () => {
                                         <td>Temperatura alta</td>
                                         <td><button className="view-button">👁️</button></td>
                                     </tr>
-                                    {/* Repetir filas según sea necesario */}
+                                    {}
                                 </tbody>
                             </table>
                         </div>

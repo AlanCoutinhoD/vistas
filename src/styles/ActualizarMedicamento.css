@@ -1,31 +1,124 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #f4f4f9; /* Color de fondo suave */
+}
+
+/* Container Styles */
+.container {
+  padding: 20px;
+  max-width: 5000px; /* Ancho máximo del contenedor */
+  margin-bottom: -30%; /* Centra el contenedor horizontalmente */
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  border-bottom: 2px solid #35A94A; /* Línea de separación */
+  padding-bottom: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #35A94A; /* Color verde para el título */
+  font-size: 24px;
+}
+
+.header button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d33;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Transición suave en el hover */
+}
+
+.header button:hover {
+  background-color: #b22b2b; /* Color de hover del botón */
+}
+
 /* Form Container Styles */
 .form-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  /* Form Section Styles */
-  .form-section {
-    flex: 1;
-  }
-  
-  /* Data Section Styles */
-  .data-section {
-    flex: 1;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #f9f9f9;
-  }
-  
-  /* Data Field Styles */
-  .data-field {
-    margin-bottom: 10px;
-  }
-  
-  .data-field strong {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas más pequeñas */
+  gap: 20px;
+}
+
+/* Form Section Styles */
+.form-section {
+  flex: 1;
+  min-width: 300px; /* Ancho mínimo del formulario */
+}
+
+/* Data Section Styles */
+.data-section {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fafafa; /* Fondo gris claro */
+  min-width: 300px; /* Ancho mínimo de la sección de datos */
+}
+
+/* Data Field Styles */
+.data-field {
+  margin-bottom: 15px;
+}
+
+.data-field strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* Color del texto */
+}
+
+/* Form Styles */
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajuste automático a dos columnas */
+  gap: 20px;
+}
+
+input {
+  width: 100%; /* Asegura que el input ocupe todo el ancho disponible en la columna */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna para darle profundidad */
+}
+
+input:focus {
+  border-color: #35A94A; /* Color del borde cuando el input está enfocado */
+  outline: none;
+  box-shadow: 0 0 8px rgba(53, 169, 74, 0.2); /* Sombra externa cuando el input está enfocado */
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #35A94A; /* Color verde para el botón */
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Transición suave en el hover */
+  grid-column: span 2; /* Hace que el botón ocupe el ancho completo del formulario */
+}
+
+button[type="submit"]:hover {
+  background-color: #2a8c1e; /* Color de hover del botón */
+}

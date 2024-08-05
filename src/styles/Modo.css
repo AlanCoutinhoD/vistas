@@ -10,25 +10,17 @@ body {
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
-/* Header Styles */
-header {
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: flex-end; /* Alinea el botón a la derecha */
-    padding: 1em;
-    background-color: transparent; /* Sin fondo */
-    box-shadow: none; /* Sin sombra */
-    z-index: 1000; /* Asegura que esté encima de otros elementos */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+/* Wrapper for Header and Main Content */
+.wrapper {
+    position: relative;
+    flex: 1;
 }
 
 /* Logout Button Styles */
 .logout-button {
-    margin-top: 25%;
-    margin-left: 100%;
+    position: absolute; /* Posición absoluta para colocarlo en la esquina superior derecha */
+    top: 10px;
+    right: 10px;
     background-color: #3AB02A;
     color: #ffffff;
     border: none;
@@ -46,21 +38,16 @@ header {
 
 /* Main Content Styles */
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 2em;
-    margin-top: 60px; /* Espacio para el header fijo */
+    /* Espacio para el header fijo */
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    max-width: 900px; /* Limita el ancho máximo */
+    max-width: 1000px; /* Limita el ancho máximo */
     width: 100%; /* Asegura que el contenedor no sea más ancho que el viewport */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
-    margin-bottom: 2em; /* Espacio adicional para el pie de página */
+    margin: 50% auto; /* Centra el contenedor principal */
+     /* Ajusta el margen superior para subir el contenido */
 }
 
 /* Heading Styles */
@@ -136,6 +123,4 @@ footer {
     box-shadow: none; /* Sin sombra */
     width: 100%; /* Asegura que el pie de página se extienda por completo */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
-    margin-top: auto; /* Asegura que el pie de página esté en la parte inferior */
 }
-

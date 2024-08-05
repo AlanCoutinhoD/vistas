@@ -88,18 +88,19 @@ const InventarioPage = () => {
       <Header />
       <main>
         <h1>INVENTARIO</h1>
-        <div className="controls">
-          <button className="new-button" onClick={addItem}>NUEVO</button>
-          <form onSubmit={handleSearch} className="search-bar">
-            <input
-              type="text"
-              placeholder="Escribe para buscar..."
-              value={searchTerm}
-              onChange={handleChange}
-            />
-            <button type="submit" className="search-button">Buscar</button>
-          </form>
-        </div>
+        <div class="controls">
+    <button class="new-button" onClick={addItem}>NUEVO</button>
+    <form onSubmit={handleSearch} className="search-bar">
+        <input
+            type="text"
+            placeholder="Escribe para buscar..."
+            value={searchTerm}
+            onChange={handleChange}
+        />
+        <button type="submit" className="search-button">Buscar</button>
+    </form>
+</div>
+
         <div className="inventory">
           {items.map(item => (
             <div key={item.id_medicamento} className="card">

@@ -42,7 +42,7 @@ const MedicosPage = () => (
                             <img src={editIcon} alt="Editar" />
                         </td>
                     </tr>
-                    {/* Repite las filas según sea necesario */}
+                    {}
                 </tbody>
             </table>
         </div>

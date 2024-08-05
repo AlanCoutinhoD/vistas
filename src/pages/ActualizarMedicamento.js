@@ -8,19 +8,19 @@ const ActualizarInformacionPage = () => {
   const { id } = useParams(); // Obtener el ID del medicamento desde la URL
   const [medicamento, setMedicamento] = useState({});
   const [originalMedicamento, setOriginalMedicamento] = useState({});
-  const navigate = useNavigate(); // Hook para redirigir
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const fetchMedicamento = async () => {
       try {
         const response = await axios.get(`http://localhost:3000/api/meds/${id}`);
         const medicamentoData = response.data[0];
-        console.log('Datos del medicamento:', medicamentoData); // Verifica los datos en la consola
+        console.log('Datos del medicamento:', medicamentoData); 
         setMedicamento(medicamentoData);
         setOriginalMedicamento(medicamentoData); // Guarda los datos originales
       } catch (error) {
         console.error('Error fetching medicamento:', error);
-        navigate('/inventarioM'); // Redirige si hay un error
+        navigate('/inventarioM');
       }
     };
 
@@ -77,70 +77,68 @@ const ActualizarInformacionPage = () => {
     <div className="container">
       <div className="header">
         <button onClick={() => navigate('/inventarioM')}>Cancelar</button>
-        <h1>ACTUALIZAR INFORMACION</h1>
+        <h1>Actualizar Información</h1>
       </div>
       <div className="form-container">
         <div className="form-section">
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="nombre_generico">Nombre Genérico</label>
-              <input
-                type="text"
-                id="nombre_generico"
-                value={medicamento.nombre_generico || ''}
-                onChange={handleChange}
-              />
+            <label htmlFor="nombre_generico">Nombre Genérico</label>
+            <input
+              type="text"
+              id="nombre_generico"
+              value={medicamento.nombre_generico || ''}
+              onChange={handleChange}
+            />
 
-              <label htmlFor="nombre_comercial">Nombre Comercial</label>
-              <input
-                type="text"
-                id="nombre_comercial"
-                value={medicamento.nombre_comercial || ''}
-                onChange={handleChange}
-              />
+            <label htmlFor="nombre_comercial">Nombre Comercial</label>
+            <input
+              type="text"
+              id="nombre_comercial"
+              value={medicamento.nombre_comercial || ''}
+              onChange={handleChange}
+            />
 
-              <label htmlFor="clasificacion_medicamento">Clasificación</label>
-              <input
-                type="text"
-                id="clasificacion_medicamento"
-                value={medicamento.clasificacion_medicamento || ''}
-                onChange={handleChange}
-              />
+            <label htmlFor="clasificacion_medicamento">Clasificación</label>
+            <input
+              type="text"
+              id="clasificacion_medicamento"
+              value={medicamento.clasificacion_medicamento || ''}
+              onChange={handleChange}
+            />
 
-              <label htmlFor="presentacion_medicamento">Presentación</label>
-              <input
-                type="text"
-                id="presentacion_medicamento"
-                value={medicamento.presentacion_medicamento || ''}
-                onChange={handleChange}
-              />
+            <label htmlFor="presentacion_medicamento">Presentación</label>
+            <input
+              type="text"
+              id="presentacion_medicamento"
+              value={medicamento.presentacion_medicamento || ''}
+              onChange={handleChange}
+            />
 
-              <label htmlFor="concentracion">Concentración</label>
-              <input
-                type="text"
-                id="concentracion"
-                value={medicamento.concentracion || ''}
-                onChange={handleChange}
-              />
+            <label htmlFor="concentracion">Concentración</label>
+            <input
+              type="text"
+              id="concentracion"
+              value={medicamento.concentracion || ''}
+              onChange={handleChange}
+            />
 
-              <label htmlFor="volumen">Volumen</label>
-              <input
-                type="text"
-                id="volumen"
-                value={medicamento.volumen || ''}
-                onChange={handleChange}
-              />
+            <label htmlFor="volumen">Volumen</label>
+            <input
+              type="text"
+              id="volumen"
+              value={medicamento.volumen || ''}
+              onChange={handleChange}
+            />
 
-              <label htmlFor="unidades_totales">Unidades Totales</label>
-              <input
-                type="number"
-                id="unidades_totales"
-                value={medicamento.unidades_totales || ''}
-                onChange={handleChange}
-              />
+            <label htmlFor="unidades_totales">Unidades Totales</label>
+            <input
+              type="number"
+              id="unidades_totales"
+              value={medicamento.unidades_totales || ''}
+              onChange={handleChange}
+            />
 
-              <button type="submit">Actualizar</button>
-            </div>
+            <button type="submit">Actualizar</button>
           </form>
         </div>
         <div className="data-section">

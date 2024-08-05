@@ -9,10 +9,10 @@ import '../styles/Inventario.css';
 
 const AgregarInventario = () => {
 
-  const navigate = useNavigate(); // Hook para la navegación
+  const navigate = useNavigate(); 
 
   const handleRedirect = () => {
-    navigate('/InventarioM'); // Redirige a la ruta deseada
+    navigate('/InventarioM'); 
   };
   
   
@@ -48,10 +48,10 @@ const AgregarInventario = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      // Mostrar notificación de éxito
+      // Mostrar notificación de exito
       toast.success('Medicamento agregado exitosamente');
 
-      // Limpiar campos después del envío
+      // Limpiar campos despues del envío
       setNombreGenerico('');
       setNombreComercial('');
       setClasificacion('');
@@ -129,7 +129,7 @@ const AgregarInventario = () => {
           />
           <button type="submit">AGREGAR</button>
         </form>
-        <ToastContainer /> {/* Coloca el contenedor de Toastify aquí */}
+        <ToastContainer /> {}
       </div>
     </div>
   );

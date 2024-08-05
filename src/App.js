@@ -13,6 +13,7 @@ import ActualizarMedicamentoPage from './pages/ActualizarMedicamento';
 import AgregarVentaPage from './pages/AgregarVenta';
 import AgregarMedicoPage from './pages/AgregarMedicoPage';
 import ActualizarVentaPage from './pages/ActualizarVenta';
+import DistribuidoresPage from './pages/DistribuidoresPage';
 import 'react-toastify/dist/ReactToastify.css'; // Importa los estilos de Toastify
 import ActualizarMedicoPage from './pages/ActualizarMedicoPage';
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/ActualizarVenta/:id" element={<ActualizarVentaPage/>} />
         <Route path="/AgregarMedico" element={<AgregarMedicoPage/>} />
         <Route path="/ActualizarMedico/:id" element={<ActualizarMedicoPage/>}/>
+        <Route path="/Distribuidores" element={<DistribuidoresPage/>}/>
       </Routes>
     </Router>
   );

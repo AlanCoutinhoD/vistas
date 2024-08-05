@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../styles/ActualizarInformacion.css';
+import '../styles/ActualizarMedico.css'; 
 import { useParams, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2'; // Importa SweetAlert2
 
@@ -8,7 +8,7 @@ const ActualizarMedicoPage = () => {
   const { id } = useParams(); // Obtener el ID del médico desde la URL
   const [doctor, setDoctor] = useState({});
   const [originalDoctor, setOriginalDoctor] = useState({});
-  const navigate = useNavigate(); // Hook para redirigir
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const fetchDoctor = async () => {
@@ -16,10 +16,10 @@ const ActualizarMedicoPage = () => {
         const response = await axios.get(`http://localhost:3000/medicos/medicos/${id}`);
         const doctorData = response.data;
         setDoctor(doctorData);
-        setOriginalDoctor(doctorData); // Guarda los datos originales
+        setOriginalDoctor(doctorData); 
       } catch (error) {
         console.error('Error fetching doctor:', error);
-        navigate('/medicos'); // Redirige si hay un error
+        navigate('/medicos');
       }
     };
 
@@ -64,7 +64,7 @@ const ActualizarMedicoPage = () => {
 
         await axios.put(`http://localhost:3000/medicos/medicos/${id}`, updatedDoctor);
         await Swal.fire('¡Actualizado!', 'La información del médico ha sido actualizada.', 'success');
-        navigate('/medicos'); // Redirige al usuario a la página de médicos después de actualizar
+        navigate('/medicos'); 
       } catch (error) {
         console.error('Error updating doctor:', error);
         await Swal.fire('Error', 'Hubo un problema al actualizar la información del médico.', 'error');
