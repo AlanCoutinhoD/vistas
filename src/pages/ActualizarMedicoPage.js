@@ -13,7 +13,7 @@ const ActualizarMedicoPage = () => {
   useEffect(() => {
     const fetchDoctor = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/medicos/medicos/${id}`);
+        const response = await axios.get(`http://100.25.174.92:3000/medicos/medicos/${id}`);
         const doctorData = response.data;
         setDoctor(doctorData);
         setOriginalDoctor(doctorData); 

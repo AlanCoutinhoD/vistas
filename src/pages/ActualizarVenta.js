@@ -13,7 +13,7 @@ const ActualizarVentaPage = () => {
   useEffect(() => {
     const fetchVenta = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/sales/sales/${id}`);
+        const response = await axios.get(`http://100.25.174.92:3000/sales/sales/${id}`);
         const ventaData = response.data;
         console.log('Datos de la venta:', ventaData); 
         setVenta(ventaData);

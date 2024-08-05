@@ -15,7 +15,7 @@ const DistributorsPage = () => {
   useEffect(() => {
     const fetchDistributors = async () => {
       try {
-        const response = await fetch('http://localhost:3000/distribuidores/distribuidores');
+        const response = await fetch('http://100.25.174.92:3000/distribuidores/distribuidores');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

@@ -28,7 +28,7 @@ const AgregarInventario = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/meds', {
+      const response = await fetch('http://100.25.174.92:3000/api/meds', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

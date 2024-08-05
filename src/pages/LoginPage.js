@@ -13,7 +13,7 @@ const LoginPage = () => {
     event.preventDefault();
     
     try {
-      const response = await axios.post('http://localhost:3000/login/login', {
+      const response = await axios.post('http://100.25.174.92:3000/login/login', {
         username,
         password,
       });

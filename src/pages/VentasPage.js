@@ -16,7 +16,7 @@ const VentasPage = () => {
   useEffect(() => {
     const fetchVentas = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/sales/sales');
+        const response = await axios.get('http://100.25.174.92:3000/sales/sales');
         setVentas(response.data);
       } catch (error) {
         console.error('Error fetching ventas:', error);
@@ -42,7 +42,7 @@ const VentasPage = () => {
     if (result.isConfirmed) {
       try {
        
-        await axios.delete(`http://localhost:3000/sales/sales/${id}`);
+        await axios.delete(`http://100.25.174.92:3000/sales/sales/${id}`);
         
         setVentas((prevVentas) => prevVentas.filter((venta) => venta.id !== id));
        

@@ -13,7 +13,7 @@ const InventarioPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/meds');
+        const response = await axios.get('http://100.25.174.92:3000/api/meds');
         setItems(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -25,7 +25,7 @@ const InventarioPage = () => {
 
   const fetchItems = async (search = '') => {
     try {
-      const response = await axios.get(`http://localhost:3000/api/meds/search/${search}`);
+      const response = await axios.get(`http://100.25.174.92:3000/api/meds/search/${search}`);
       setItems(response.data);
     } catch (error) {
       console.error('Error fetching items:', error);
@@ -55,7 +55,7 @@ const InventarioPage = () => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete('http://localhost:3000/api/meds', {
+        await axios.delete('http://100.25.174.92:3000/api/meds', {
           data: { id_medicamento_ingresado: id_medicamento },
         });
         setItems(items.filter(item => item.id_medicamento !== id_medicamento));

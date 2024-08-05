@@ -13,7 +13,7 @@ const ActualizarInformacionPage = () => {
   useEffect(() => {
     const fetchMedicamento = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/meds/${id}`);
+        const response = await axios.get(`http://100.25.174.92:3000/api/meds/${id}`);
         const medicamentoData = response.data[0];
         console.log('Datos del medicamento:', medicamentoData); 
         setMedicamento(medicamentoData);

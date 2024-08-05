@@ -15,7 +15,7 @@ const DoctorsPage = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const response = await fetch('http://localhost:3000/medicos/AllMedicos');
+        const response = await fetch('http://100.25.174.92:3000/medicos/AllMedicos');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

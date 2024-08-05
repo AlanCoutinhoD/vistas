@@ -23,7 +23,7 @@ const AgregarMedico = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/medicos/addMedico', {
+      const response = await fetch('http://100.25.174.92:3000/medicos/addMedico', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
