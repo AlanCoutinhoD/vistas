@@ -103,7 +103,6 @@ const DoctorsPage = () => {
           <h1>MEDICOS</h1>
           <p>LISTA DE MEDICOS</p>
         </center>
-        <button className="new-button" onClick={handleNew}>NUEVO</button>
         <div className="search-bar">
           <input
             type="text"
@@ -113,6 +112,8 @@ const DoctorsPage = () => {
           />
           <button onClick={handleSearch}>Buscar</button>
         </div>
+        <button className="new-button" onClick={handleNew}>NUEVO</button>
+        
         <table>
           <thead>
             <tr>

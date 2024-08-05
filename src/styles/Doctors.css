@@ -10,7 +10,7 @@
 .doctors-container {
     padding: 20px;
     max-width: 1200px; /* Limita el ancho máximo de la tabla */
-    margin: 0 auto; /* Centra el contenido */
+    margin:   auto; /* Centra el contenido */
 }
 
 /* Estilo del título */
@@ -54,7 +54,8 @@
 
 .search-bar input {
     
-    padding: 14px;
+    
+    /* padding: 14px; */
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -68,6 +69,7 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-bottom: -35%;
 }
 
 .search-bar button:hover {
@@ -76,10 +78,11 @@
 
 /* Estilo de la tabla */
 table {
+    margin-top: 20px;
     width: 100%;
     border-collapse: collapse;
     background-color: white;
-    margin-top: 200px; /* Espacio debajo de la tabla */
+    /* Espacio debajo de la tabla */
 }
 
 table th, table td {
