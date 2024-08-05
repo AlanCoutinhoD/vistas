@@ -59,7 +59,7 @@ const ActualizarVentaPage = () => {
           total: venta.total,
         };
 
-        await axios.put(`http://localhost:3000/sales/sales/${id}`, updatedVenta);
+        await axios.put(`http://100.25.174.92:3000/sales/sales/${id}`, updatedVenta);
         await Swal.fire('Actualizado!', 'La venta se ha actualizado correctamente.', 'success');
         navigate('/ventas'); 
       } catch (error) {

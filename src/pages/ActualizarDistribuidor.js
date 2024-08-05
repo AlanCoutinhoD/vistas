@@ -66,7 +66,7 @@ const ActualizarInformacionPage = () => {
           estado_activo: distribuidor.estado_activo
         };
 
-        await axios.put(`http://localhost:3000/distribuidores/distribuidores/${id}`, updatedDistribuidor);
+        await axios.put(`http://100.25.174.92:3000/distribuidores/distribuidores/${id}`, updatedDistribuidor);
         await Swal.fire('Actualizado!', 'La información se ha actualizado correctamente.', 'success');
         navigate('/distribuidores'); // Redirige al usuario a la página de distribuidores después de actualizar
       } catch (error) {

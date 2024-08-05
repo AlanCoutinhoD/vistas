@@ -62,7 +62,7 @@ const ActualizarMedicoPage = () => {
           notas: doctor.notas,
         };
 
-        await axios.put(`http://localhost:3000/medicos/medicos/${id}`, updatedDoctor);
+        await axios.put(`http://100.25.174.92:3000/medicos/medicos/${id}`, updatedDoctor);
         await Swal.fire('¡Actualizado!', 'La información del médico ha sido actualizada.', 'success');
         navigate('/medicos'); 
       } catch (error) {

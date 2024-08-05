@@ -1,3 +1,4 @@
+/* Estilo general de la página */
 .doctors-page {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,25 +6,27 @@
     background-color: #ffffff;
 }
 
+/* Contenedor principal */
 .doctors-container {
-    
     padding: 20px;
     max-width: 1200px; /* Limita el ancho máximo de la tabla */
     margin: 0 auto; /* Centra el contenido */
 }
 
+/* Estilo del título */
 .doctors-container h1 {
     margin-top: 10%;
-    
     color: #2b7b2f;
     margin-bottom: 10px;
 }
 
+/* Estilo del subtítulo */
 .doctors-container p {
     color: #666;
     margin-bottom: 20px;
 }
 
+/* Estilo del botón NUEVO */
 .new-button {
     display: inline-block;
     padding: 10px 20px;
@@ -41,16 +44,17 @@
     background-color: #5a9b4d;
 }
 
+/* Estilo de la barra de búsqueda */
 .search-bar {
+    
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .search-bar input {
     
-    margin-top: -20%;
-    padding: 10px;
+    padding: 14px;
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -58,8 +62,6 @@
 }
 
 .search-bar button {
-    
-    margin-top: -20%;
     padding: 10px;
     background-color: #6fae61;
     color: white;
@@ -72,11 +74,12 @@
     background-color: #5a9b4d;
 }
 
+/* Estilo de la tabla */
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
-    margin-bottom: 20px; /* Espacio debajo de la tabla */
+    margin-top: 200px; /* Espacio debajo de la tabla */
 }
 
 table th, table td {
@@ -97,6 +100,7 @@ table tr:hover {
     background-color: #f1f1f1; /* Resalta la fila al pasar el ratón */
 }
 
+/* Estilo de los iconos de acción */
 table .actions img {
     cursor: pointer;
     width: 20px;

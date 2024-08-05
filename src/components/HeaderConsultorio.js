@@ -16,9 +16,9 @@ const Header = () => {
         <h1>FARMACIA AMIGO</h1>
       </div>
       <nav className="header-nav">
-        <a href="/Contactos">MEDICOS</a>
-        <a href="/Pacientes">PACIENTES</a>
-        <a href="/Citas">CITAS</a>
+        <a href="/Medicos">MEDICOS</a>
+        <a href="/ExpedientePaciente">PACIENTES</a>
+        {/* <a href="/Citas">CITAS</a> */}
         <a href="/modo">CAMBIAR DE MODO</a>
         <button className="logout-button" onClick={handleLogout}>Cerrar Sesión</button>
       </nav>

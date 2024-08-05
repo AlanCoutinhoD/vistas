@@ -10,7 +10,6 @@ const DoctorsPage = () => {
   const [doctors, setDoctors] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate(); // Hook para la navegación
-
   
   useEffect(() => {
     const fetchDoctors = async () => {
@@ -29,10 +28,9 @@ const DoctorsPage = () => {
     fetchDoctors();
   }, []);
 
- 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/medicos/search/${encodeURIComponent(searchTerm)}`, {
+      const response = await fetch(`http://100.25.174.92:3000/medicos/search/${encodeURIComponent(searchTerm)}`, {
         method: 'GET',
       });
 
@@ -47,7 +45,6 @@ const DoctorsPage = () => {
     }
   };
 
-
   const handleDelete = (id) => {
     Swal.fire({
       title: '¿Estás seguro?',
@@ -61,7 +58,7 @@ const DoctorsPage = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const response = await fetch(`http://localhost:3000/medicos/medicos/${id}`, {
+          const response = await fetch(`http://100.25.174.92:3000/medicos/medicos/${id}`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json',
@@ -72,17 +69,14 @@ const DoctorsPage = () => {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
 
-          
           setDoctors(doctors.filter(doctor => doctor.id !== id));
 
-         
           Swal.fire(
             'Eliminado',
             'El médico ha sido eliminado.',
             'success'
           );
         } catch (error) {
-         
           Swal.fire(
             'Error',
             `Hubo un problema al intentar eliminar el médico: ${error.message}`,
@@ -93,9 +87,12 @@ const DoctorsPage = () => {
     });
   };
 
-  
   const handleEdit = (id) => {
     navigate(`/ActualizarMedico/${id}`); // Navega a la página de edición con el ID del médico
+  };
+
+  const handleNew = () => {
+    navigate('/AgregarMedico'); // Navega a la página para agregar un nuevo médico
   };
 
   return (
@@ -106,7 +103,7 @@ const DoctorsPage = () => {
           <h1>MEDICOS</h1>
           <p>LISTA DE MEDICOS</p>
         </center>
-        <button className="new-button">NUEVO</button>
+        <button className="new-button" onClick={handleNew}>NUEVO</button>
         <div className="search-bar">
           <input
             type="text"
@@ -163,7 +160,6 @@ const DoctorsPage = () => {
           </tbody>
         </table>
       </div>
-     
     </div>
   );
 };

@@ -63,7 +63,7 @@ const ActualizarInformacionPage = () => {
           unidades_totales: medicamento.unidades_totales,
         };
 
-        await axios.put('http://localhost:3000/api/meds', updatedMedicamento);
+        await axios.put('http://100.25.174.92:3000/api/meds', updatedMedicamento);
         await Swal.fire('Actualizado!', 'La información se ha actualizado correctamente.', 'success');
         navigate('/inventarioM'); // Redirige al usuario a la página de inventario después de actualizar
       } catch (error) {
